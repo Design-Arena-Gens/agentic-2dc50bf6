@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+a {
+  @apply text-brand hover:text-brand-dark transition-colors;
+}
+
+.section-container {
+  @apply mx-auto max-w-6xl px-6;
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, rgba(20, 120, 255, 0.15), transparent 45%),
+    radial-gradient(circle at top right, rgba(14, 84, 179, 0.15), transparent 40%),
+    linear-gradient(180deg, rgba(232, 242, 255, 0.4) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.hero-highlight {
+  @apply bg-brand text-white px-2 py-1 rounded-md shadow-sm;
+}
